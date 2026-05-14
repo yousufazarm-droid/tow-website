@@ -67,6 +67,8 @@ color:black;
 font-weight:bold;
 text-decoration:none;
 border-radius:10px;
+border:none;
+cursor:pointer;
 }
 
 section{
@@ -143,7 +145,6 @@ color:#888;
 <p>Fast, Reliable & Affordable Tow Truck Service in Auckland</p>
 
 <a class="btn" href="tel:+640273407200">Call Now</a>
-
 <a class="btn" href="sms:+640273407200">Text Message</a>
 
 </section>
@@ -173,6 +174,7 @@ color:#888;
 
 </section>
 
+<!-- ✅ REVIEW FIXED -->
 <section class="reviews" id="reviews">
 
 <h2>Customer Reviews</h2>
@@ -192,32 +194,36 @@ color:#888;
 <p>"Arrived quickly and helped me safely."</p>
 </div>
 
+<h3>Leave a Review</h3>
+
+<form>
+<input type="text" placeholder="Your Name" required><br>
+<textarea placeholder="Write your review..." required></textarea><br>
+<button class="btn" type="submit">Submit Review</button>
+</form>
+
 </section>
 
+<!-- ✅ CONTACT FIXED -->
 <section class="contact" id="contact">
 
 <h2>Contact Us</h2>
 
-<form>
+<form action="mailto:youremail@gmail.com" method="post" enctype="text/plain">
 
-<input type="text" placeholder="Your Name"><br>
+<input type="text" placeholder="Your Name" required><br>
+<input type="text" placeholder="Phone Number" required><br>
+<textarea rows="4" placeholder="Message" required></textarea><br>
 
-<input type="text" placeholder="Phone Number"><br>
-
-<textarea rows="4" placeholder="Message"></textarea><br>
-
-<button class="btn" type="button">Send</button>
+<button class="btn" type="submit">Send</button>
 
 </form>
 
 </section>
 
 <footer>
-
 © 2026 Local Tow Away Limited | All Rights Reserved
-
 </footer>
 
 </body>
-</html> 
- 
+</html>
